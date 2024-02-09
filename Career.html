@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Career </title>
+  <link rel="stylesheet" href="isuru.css">
+  <script src="career.js"></script>
+</head>
+
+<body>
+  
+  <!-- Navigation bar -->
+  <nav class="menu">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Healthcare Plans</a></li>
+      <li><a href="">Payment Method</a></li>
+      <li><a href="">Create Account</a></li>
+      <li><a href="">Login</a></li>
+      <li><a href="Career.html">Career</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="Feedback.html">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="con01"> Career Guide </h2>
+  <img src="img003.webp" width="1500px" height="500px"  >
+
+  <h5 class="con04"> Welcome to Dawasa Healthcare insurance company, where we are committed to improving lives through quality coverage and exceptional service.As a leading provider in the industry, we offer rewarding career opportunities for individuals passionate about making a difference in people's lives</h5>
+
+  <h3 class="con02"> Do you like To join with Us ? </h3>
+
+   <!-- slidshow image in time  -->
+  <div id="container" alt="centered image" style="position: relative; width: 1000px; height: 500px;">
+
+    <img src="17-01.jpg" alt="centered image" style="position: absolute; top: 0px; left: 0px; position: relative; width: 1000px; height: 500px;">
+    <img src="StrongInsuranceCoverageActsAsRetentionTool.webp" alt="centered image" style="position: absolute; top: 0px; left: 0px; position: relative; width: 1000px; height: 500px;">
+    <img src="How-Big-Should-a-Business-Be-Before-It-Offers-Employee-Benefits.webp" alt="centered image" style="position: absolute; top: 0px; left: 0px; position: relative; width: 1000px; height: 500px;">
+    <img src="img002.jpg" alt="centered image" style="position: absolute; top: 0px; left: 0px; position: relative; width: 1000px; height: 500px;">
+    <img src="img004.jpg" alt="centered image" style="position: absolute; top: 0px; left: 0px; position: relative; width: 1000px; height: 500px;">
+  
+  </div>
+    
+  <!-- Java Script Change image in given time  -->
+
+  <script>
+    var container = document.getElementById("container");
+    var images = container.getElementsByTagName("img");
+    var index = 0;
+  
+    // Create function move to next image
+    function showNextImage() {
+      images[index].style.display = "none";
+      index = (index + 1) % images.length;
+      images[index].style.display = "block";
+    }
+  
+    setInterval(showNextImage, 2000);
+  </script>
+
+     <br><br>
+
+  <!-- Contact Form -->
+  <div class="contact-section">
+    <h1>Send Us</h1>
+    <div class="border"></div>
+    <form action="apply.php" method="POST" onsubmit="return validateForm()">
+        <input type="text" class="c-text" placeholder="Your Name"required>
+        <input type="email" class="c-text" placeholder="Email"required>
+        <input type="submit" class="c-btn" value="Send Message">
+    </form>
+</div> <br><br>
+
+  <!-- Footer  -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h5 class="con04">Contact Us</h5>
+          <ul>
+            <li>DAWASA Insurance Center,</li>
+            <li>No.57, Wellawatta Road,</li>
+            <li>Colombo 06.</li><br>
+            <li>dawasa67@gamil.com</li>
+            <li>Tel. 011 - 225 7972</li><br>
+            <li>Hot Line</li>
+            <li>24 * 7 </li>
+            <li>1304</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5 class="con04">Branches,</h5>
+          <ul>
+            <li>Piliyandala</li>
+            <li>Gampha</li>
+            <li>Wadduwa</li>
+            <li>Aturugiriya</li>
+            <li>Jaffna</li>
+            <li>Kandy</li>
+            <li>Anuradapura</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5 class="con04">Quick Links</h5>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="horizontal-line">
+    </div>
+  </footer>
+
+</body>
+
+</body>
+
+</html>

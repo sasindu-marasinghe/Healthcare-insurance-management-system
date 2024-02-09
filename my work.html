@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>DAWASA</title>
+  <link rel="stylesheet" href="C:\Users\USER\Documents\php_ims\my work\my style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1>DAWASA Health Care </h1>
+     
+   
+      </header>
+
+      <section id="welcome">
+        <div class="container">
+          <h2>Welcome to our Company</h2>
+          <p>We provide high-quality services for your business.</p>
+          <p>How can we help?</p>
+          <a href="#contact" class="btn">Enter your details</a>
+          <section id="contact">
+            <div class="container">
+              <h2>Contact Us</h2>
+              <form action="submit.php" method="POST">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                <label for="City">City</label>
+            <select id="City" name="City">
+              <option value="Gampaha">Gampaha</option>
+              <option value="Kaduwela">Kaduwela</option>
+              <option value="Colombo">Colombo</option>
+              <option value="Negombo">Negombo</option>
+              <option value="kandy">kandy</option>
+          
+            </select>
+            <br>
+            <br>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>DAWASA is a healthcare insurance management system. It's a user-friendly, easy-to-use website that 
+            allows users to interact with it without any hassle. The website provides a number of capabilities 
+            regarding health insurance services.</p>
+        </div>
+      </section>
+
+  
+<section id="email,call">
+    <div class="container">
+        <p>Contact us via email: <a href="mailto:dawasahealth@gmail.com">dawasahealth@gmail.com</a></p>
+        <p> Call support <a href="tel:+94762884825">+94762884825</a></p>
+
+    </div>
+</section>
+
+</body>
+</html>
